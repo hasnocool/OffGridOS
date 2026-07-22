@@ -1,0 +1,18 @@
+# Build artifacts
+build/
+dist/
+*.img
+
+# OS files
+.vagrant/
+.DS_Store
+
+# Logs
+*.log
+
+# Python
+__pycache__/
+*.pyc
+
+# Node
+node_modules/

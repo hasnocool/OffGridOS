@@ -1,0 +1,16 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run scripts lint
+        run: |
+          if command -v shellcheck >/dev/null 2>&1; then
+            shellcheck ./scripts/*.sh || true
+          else
+            echo "shellcheck not installed; skipping"
+          fi
