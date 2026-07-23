@@ -54,6 +54,9 @@ offgridos/
 ├── docs/           # Documentation
 ├── build/          # Build system and scripts
 ├── packages/       # Package repos and package index
+│   ├── offgridos-core/
+│   ├── offgridos-api/
+│   ├── offgridos-dashboard/
 │   ├── offgridos-branding/
 │   ├── offgridos-theme/
 │   ├── offgridos-icons/
@@ -90,6 +93,8 @@ System configuration is now sourced from `packages/offgridos-settings/` and inst
 ├── ai.yaml
 ├── energy.yaml
 └── communications.yaml
+
+Core daemon, API, and dashboard code now live in package repos under `packages/offgridos-core/`, `packages/offgridos-api/`, and `packages/offgridos-dashboard/`.
 ```
 
 ## Documentation

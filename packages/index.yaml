@@ -1,4 +1,13 @@
 packages:
+  offgridos-core:
+    path: packages/offgridos-core
+    type: core
+  offgridos-api:
+    path: packages/offgridos-api
+    type: api
+  offgridos-dashboard:
+    path: packages/offgridos-dashboard
+    type: dashboard
   offgridos-branding:
     path: packages/offgridos-branding
     type: branding

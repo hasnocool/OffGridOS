@@ -46,3 +46,15 @@
 	path = packages/offgridos-recovery
 	url = https://github.com/hasnocool/offgridos-recovery
 	branch = main
+[submodule "packages/offgridos-core"]
+	path = packages/offgridos-core
+	url = https://github.com/hasnocool/offgridos-core
+	branch = main
+[submodule "packages/offgridos-api"]
+	path = packages/offgridos-api
+	url = https://github.com/hasnocool/offgridos-api
+	branch = main
+[submodule "packages/offgridos-dashboard"]
+	path = packages/offgridos-dashboard
+	url = https://github.com/hasnocool/offgridos-dashboard
+	branch = main
