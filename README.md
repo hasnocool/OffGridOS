@@ -1,55 +1,18 @@
 # OffGridOS
 
-An offline-first operating system for off-grid, adventure, and homestead users.
+OffGridOS is an offline-first operating system and platform for resilient, self-sufficient communities.
 
-## Overview
+It combines dependable local computing, renewable-energy-aware services, knowledge preservation, communications, maps, and community infrastructure. It is designed to remain useful when internet access is limited and to scale from a single household or vehicle to a connected regional network.
 
-OffGridOS provides long-range communications, entertainment, news, and essential services using free, distributed technologies — all working completely offline.
+## Product direction
 
-## Features
+- OffGridOS Media Server (OMS) is the first consumer product: an offline-capable digital hub for media, documentation, local AI assistance, maps, communications, and network services.
+- Ubuntu and Arch editions provide stable and flexible deployment paths.
+- The wider platform adds energy monitoring, local AI, community Atlas services, resilient communications, trusted locations, and incentives for participating landowners and businesses.
 
-- **Offline-First Computing** — Full functionality without internet
-- **Local AI Assistant** — RAG search, troubleshooting, planning
-- **Energy Monitoring** — Solar, battery, power statistics
-- **Knowledge Vault** — Offline documentation and manuals
-- **Offline Maps** — Resource markers, campsites, water sources
-- **Communications** — LoRa, Meshtastic, SDR support
-- **Modular Plugins** — Extend functionality as needed
+## Repository structure
 
-## Supported Hardware
-
-### Tier 1
-- Raspberry Pi 5 (8GB+ RAM, 256GB+ SSD)
-- Intel N100 Mini PC (16GB+ RAM, 500GB+ NVMe)
-- AMD Mini PC (Ryzen 5600U/7840HS)
-
-## Distributions
-
-| Edition | Base | Target Users |
-|---------|------|--------------|
-| OffGridOS Ubuntu | Ubuntu 24.04 LTS | Homestead, community deployments |
-| OffGridOS Arch | Arch Linux | Developers, advanced users |
-
-## Building
-
-### Prerequisites
-
-```bash
-sudo apt install debootstrap squashfs-tools xorriso grub-pc-bin grub-efi-amd64-bin mtools
-```
-
-### Build Ubuntu Edition
-
-```bash
-cd build
-sudo ./build-ubuntu.sh
-```
-
-The ISO will be created in `build/output/`.
-
-## Repository Structure
-
-```
+```text
 offgridos/
 ├── docs/           # Documentation
 ├── build/          # Build system and scripts
@@ -69,23 +32,37 @@ offgridos/
 │   ├── offgridos-ai/
 │   ├── offgridos-network/
 │   └── offgridos-recovery/
-├── core/           # OffGridOS Core Daemon (offgridd)
-├── services/       # Backend services
-├── plugins/        # Plugin system
-├── dashboard/      # Web dashboard
-├── api/            # FastAPI backend
 ├── atlas/          # Offline mapping
-├── ai/             # Local AI assistant
 ├── knowledge/      # Knowledge vault
-├── installers/     # System installers
+├── installers/    # System installers
+├── plugins/       # Plugin system
 └── deployment/     # Deployment configurations
 ```
 
+Core daemon, API, and dashboard code live in package repos under `packages/offgridos-core/`, `packages/offgridos-api/`, and `packages/offgridos-dashboard/`.
+
+## Building
+
+### Prerequisites
+
+```bash
+sudo apt install debootstrap squashfs-tools xorriso grub-pc-bin grub-efi-amd64-bin mtools
+```
+
+### Build Ubuntu edition
+
+```bash
+cd build
+sudo ./build-ubuntu.sh
+```
+
+The ISO will be created in `build/output/`.
+
 ## Configuration
 
-System configuration is now sourced from `packages/offgridos-settings/` and installed into `/etc/offgridos/` during the ISO build:
+System configuration is sourced from `packages/offgridos-settings/` and installed into `/etc/offgridos/` during the ISO build:
 
-```
+```text
 /etc/offgridos/
 ├── system.yaml
 ├── services.yaml
@@ -93,15 +70,22 @@ System configuration is now sourced from `packages/offgridos-settings/` and inst
 ├── ai.yaml
 ├── energy.yaml
 └── communications.yaml
-
-Core daemon, API, and dashboard code now live in package repos under `packages/offgridos-core/`, `packages/offgridos-api/`, and `packages/offgridos-dashboard/`.
 ```
 
 ## Documentation
 
-- [Phase 1 Specification](SPEC.md)
-- [Architecture](docs/architecture.md)
-- [Contributing](docs/contributing.md)
+1. [Vision and Business Plan](docs/01-vision-and-business-plan.md)
+2. [Product Ecosystem](docs/02-product-ecosystem.md)
+3. [Technical Architecture](docs/03-technical-architecture.md)
+4. [Development Roadmap](docs/04-development-roadmap.md)
+5. [Media Server Specification](docs/05-media-server-specification.md)
+6. [Ubuntu and Arch Editions](docs/06-ubuntu-and-arch-editions.md)
+7. [Community Atlas and Networking](docs/07-community-atlas-and-networking.md)
+8. [Credits, Incentives, and Token Economics](docs/08-credits-incentives-and-token-economics.md)
+9. [Security, Privacy, and Equipment Safety](docs/09-security-privacy-and-equipment-safety.md)
+10. [Revenue and Go-to-Market](docs/10-revenue-and-go-to-market.md)
+11. [Phase 1 Product Specification](docs/11-phase-1-product-specification.md)
+12. [Governance and Contribution Standards](docs/12-governance-and-contribution-standards.md)
 
 ## License
 
