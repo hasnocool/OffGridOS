@@ -1,0 +1,37 @@
+packages:
+  offgridos-branding:
+    path: packages/offgridos-branding
+    type: branding
+  offgridos-theme:
+    path: packages/offgridos-theme
+    type: theme
+  offgridos-icons:
+    path: packages/offgridos-icons
+    type: icons
+  offgridos-wallpapers:
+    path: packages/offgridos-wallpapers
+    type: wallpapers
+  offgridos-welcome:
+    path: packages/offgridos-welcome
+    type: welcome
+  offgridos-installer:
+    path: packages/offgridos-installer
+    type: installer
+  offgridos-settings:
+    path: packages/offgridos-settings
+    type: settings
+  offgridos-update:
+    path: packages/offgridos-update
+    type: update
+  offgridos-media:
+    path: packages/offgridos-media
+    type: media
+  offgridos-ai:
+    path: packages/offgridos-ai
+    type: ai
+  offgridos-network:
+    path: packages/offgridos-network
+    type: network
+  offgridos-recovery:
+    path: packages/offgridos-recovery
+    type: recovery

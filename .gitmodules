@@ -1,0 +1,48 @@
+[submodule "packages/offgridos-branding"]
+	path = packages/offgridos-branding
+	url = https://github.com/hasnocool/offgridos-branding
+	branch = main
+[submodule "packages/offgridos-theme"]
+	path = packages/offgridos-theme
+	url = https://github.com/hasnocool/offgridos-theme
+	branch = main
+[submodule "packages/offgridos-icons"]
+	path = packages/offgridos-icons
+	url = https://github.com/hasnocool/offgridos-icons
+	branch = main
+[submodule "packages/offgridos-wallpapers"]
+	path = packages/offgridos-wallpapers
+	url = https://github.com/hasnocool/offgridos-wallpapers
+	branch = main
+[submodule "packages/offgridos-welcome"]
+	path = packages/offgridos-welcome
+	url = https://github.com/hasnocool/offgridos-welcome
+	branch = main
+[submodule "packages/offgridos-installer"]
+	path = packages/offgridos-installer
+	url = https://github.com/hasnocool/offgridos-installer
+	branch = main
+[submodule "packages/offgridos-settings"]
+	path = packages/offgridos-settings
+	url = https://github.com/hasnocool/offgridos-settings
+	branch = main
+[submodule "packages/offgridos-update"]
+	path = packages/offgridos-update
+	url = https://github.com/hasnocool/offgridos-update
+	branch = main
+[submodule "packages/offgridos-media"]
+	path = packages/offgridos-media
+	url = https://github.com/hasnocool/offgridos-media
+	branch = main
+[submodule "packages/offgridos-ai"]
+	path = packages/offgridos-ai
+	url = https://github.com/hasnocool/offgridos-ai
+	branch = main
+[submodule "packages/offgridos-network"]
+	path = packages/offgridos-network
+	url = https://github.com/hasnocool/offgridos-network
+	branch = main
+[submodule "packages/offgridos-recovery"]
+	path = packages/offgridos-recovery
+	url = https://github.com/hasnocool/offgridos-recovery
+	branch = main
